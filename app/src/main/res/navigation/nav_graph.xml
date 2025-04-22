@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/misDatosFragment">
+
+    <fragment
+        android:id="@+id/misDatosFragment"
+        android:name="com.example.multinativeapp.fragments.MisDatosFragment"
+        android:label="Mis Datos" />
+    <fragment
+        android:id="@+id/analisisFragment"
+        android:name="com.example.multinativeapp.fragments.AnalisisFragment"
+        android:label="Análisis" />
+    <fragment
+        android:id="@+id/historicoFragment"
+        android:name="com.example.multinativeapp.fragments.HistoricoFragment"
+        android:label="Histórico" />
+
+
+</navigation>

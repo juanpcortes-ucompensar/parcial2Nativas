@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluelight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- Título: Análisis de Rutina -->
+        <TextView
+            android:id="@+id/tv_titulo_analisis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/an_lisis_de_rutina"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Peso (en kg) -->
+        <EditText
+            android:id="@+id/et_peso"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/peso_kg"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Nivel de condición física -->
+        <Spinner
+            android:id="@+id/spinner_nivel_condicion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Tiempo disponible (minutos) -->
+        <EditText
+            android:id="@+id/et_tiempo_disponible"
+            style="@style/EditTextRounded"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/tiempo_disponible_min"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Objetivo -->
+        <Spinner
+            android:id="@+id/spinner_objetivo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botón de calcular rutina -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_calcular_rutina"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/calcular_rutina"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bluedark"
+            android:textSize="18sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/bluedark"
+            app:strokeWidth="3dp" />
+
+        <!-- Resultado de calorías quemadas -->
+        <TextView
+            android:id="@+id/tv_calorias_quemadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calor_as_a_quemar"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Resultado de distribución de ejercicios -->
+        <TextView
+            android:id="@+id/tv_distribucion_ejercicios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/distribuci_n_de_ejercicios"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Resultado de intensidad recomendada -->
+        <TextView
+            android:id="@+id/tv_intensidad_recomendada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/intensidad_recomendada"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Opción para guardar resultados -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_guardar_resultados"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="@string/guardar_resultados"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/bluedark"
+            android:textSize="18sp"
+            app:cornerRadius="30dp"
+            app:strokeColor="@color/bluedark"
+            app:strokeWidth="3dp"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

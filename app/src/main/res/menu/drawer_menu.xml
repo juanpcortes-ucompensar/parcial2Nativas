@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/misDatosFragment"
+            android:title="@string/mis_datos" />
+        <item
+            android:id="@+id/analisisFragment"
+            android:title="@string/an_lisis" />
+        <item
+            android:id="@+id/historicoFragment"
+            android:title="@string/hist_rico" />
+    </group>
+</menu>
